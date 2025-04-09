@@ -1,0 +1,80 @@
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Blur Background for Light Mode */
+.blur-bg-light {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(100px);
+  background: radial-gradient(circle at center, #f9f0fa 0%, #bf9eed 100%);
+  opacity: 0.7;
+}
+
+/* Blur Background for Dark Mode */
+.blur-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(100px);
+  background: radial-gradient(circle at center, #6b21a8 0%, #0f0f11 70%);
+  opacity: 0.7;
+}
+
+/* Wave Animation */
+@keyframes waveFloat1 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes waveFloat2 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes waveFloat3 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+}
+
+.wave {
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.wave1 { animation: waveFloat1 6s infinite; }
+.wave2 { animation: waveFloat2 5s infinite; }
+.wave3 { animation: waveFloat3 4s infinite; }
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+/* Final fix for tech stack marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+  gap: 1.5rem;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

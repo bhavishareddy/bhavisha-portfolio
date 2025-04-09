@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhavisha | Portfolio</title>
+
+  <!-- Tailwind & Plugins -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="scripts/main.js" defer></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            playfair: ['Playfair Display', 'serif']
+          },
+          colors: {
+            pastel: {
+              lilac: '#F5EFFF',
+              mint: '#E6FFF5',
+              lilacDark: '#d6c4ef'
+            },
+            texttone: {
+              slate: '#4A4A4A',
+              mauve: '#5A4765',
+              charcoal: '#333A45'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+<script>
+  function toggleModal() {
+    document.getElementById("resumeModal").classList.toggle("hidden");
+  }
+</script>
+
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body class="bg-pastel-lilac text-texttone-slate dark:bg-[#0f0f11] dark:text-white font-playfair">
+  <!-- Radial Background -->
+  <div class="blur-bg hidden dark:block"></div>
+  <div class="blur-bg-light dark:hidden"></div>
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="fixed top-6 left-6 z-50 text-xl p-2 rounded-full bg-pastel-mint dark:bg-white/10 backdrop-blur-md hover:scale-105 transition">
+    🌙
+  </button>
+
+  <!-- Navigation -->
+  <nav class="fixed top-6 right-6 z-50 bg-pastel-mint dark:bg-black/50 backdrop-blur-md px-6 py-3 rounded-xl shadow text-sm text-black dark:text-white hidden md:flex space-x-4">
+    <a href="#hero" class="hover:text-pink-300">Home</a>
+    <a href="#about" class="hover:text-pink-300">About</a>
+    <a href="#skills" class="hover:text-pink-300">Skills</a>
+    <a href="#experience" class="hover:text-pink-300">Experience</a>
+    <a href="#projects" class="hover:text-pink-300">Projects</a>
+    <a href="#contact" class="hover:text-pink-300">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+    <div>
+      <h1 class="text-6xl sm:text-7xl md:text-8xl font-bold leading-tight">
+        Hello!<br>I am
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500">Bhavisha </span>
+      </h1>
+      <p class="mt-4 text-texttone-charcoal dark:text-white/70 text-lg">• Aspiring Frontend Software Engineer • A Computer Science Graduate • Creator</p><br>
+        <!-- Contact Me -->
+        <a href="#contact" class="inline-flex items-center gap-2 px-6 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition duration-300">
+          <span class="iconify" data-icon="mdi:email-outline"></span>
+          Contact me
+        </a>
+      
+        <!-- Download CV (opens modal) -->
+        <button onclick="toggleModal()" class="inline-flex items-center gap-2 px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition duration-300">
+          <span class="iconify" data-icon="mdi:file-document-outline"></span>
+          Resume
+        </button>             
+      </div>      
+      
+    </div>
+  </section>
+
+  <section id="about" class="py-24 px-6 max-w-6xl mx-auto" data-aos="fade-up">
+    <div class="border border-white/10 bg-white/90 dark:bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl px-8 py-10 md:py-16 md:px-12">
+      <!-- ⬇️ Insert the two-column layout (text + image) here -->
+      <h2 class="text-3xl font-bold mb-6 text-center text-texttone-mauve">About Me</h2>
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-10">
+        <!-- Text Column -->
+        <div class="md:w-2/3 space-y-5 text-justify">
+          <!-- Your about paragraphs go here -->
+          <p>
+            Hey there! I’m Bhavisha Reddy — an aspiring software engineer passionate about frontend development and user-centric design. I’m currently pursuing my Master’s in Computer Science at Clark University, where I continue to deepen my skills. I specialize in technologies like React, Tailwind CSS, HTML, CSS, Python, and modern JavaScript frameworks. I also have professional experience with Angular and Flask, AWS, and a solid foundation in Azure, CI/CD pipelines, and Agile methodologies.
+          <p>
+            Outside of tech, you’ll often find me on the badminton court or getting lost in layers of acrylic paint and mandala — an eye for color and detail that naturally flows into my UI. I'm also a proud former NCC cadet (India’s national youth military program) which taught me discipline, resilience, leadership and the power of team spirit early in life.
+          </p>
+          <p>
+            I’m well-equipped with skills across diverse domains including software engineering, full-stack development, data analysis, and cloud technologies. I believe in building purposeful, performant applications that merge design clarity with engineering precision. I stay adaptable, continuously refine my skills, and find energy in solving meaningful problems that make real impact.
+          </p>
+        </div>
+      
+        <!-- Image Column -->
+        <div class="md:w-1/3 flex justify-center md:justify-end">
+          <div class="w-full max-w-xs md:max-w-sm aspect-square rounded-full overflow-hidden shadow-xl border-4 border-white/10">
+            <img src="assets/bhavi portfolio.jpeg" alt="Bhavi" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>    
+
+<!-- Tech Stack Section -->
+<section id="skills" class="my-16 px-4 w-full">
+  <h2 class="text-3xl font-bold text-center text-black dark:text-white mb-6">What I Use to Build Stuff</h2>
+
+  <div class="w-full py-6 border-y border-gray-200 dark:border-white/10 bg-[#d4f8e8] dark:bg-black overflow-hidden">
+    <div class="flex gap-6 animate-marquee whitespace-nowrap">
+
+      <!-- HTML -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-10 h-10 mb-2" alt="HTML">
+        <p class="text-gray-800 dark:text-white text-sm">HTML</p>
+      </div>
+
+      <!-- CSS -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-10 h-10 mb-2" alt="CSS">
+        <p class="text-gray-800 dark:text-white text-sm">CSS</p>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-10 h-10 mb-2" alt="JavaScript">
+        <p class="text-gray-800 dark:text-white text-sm">JavaScript</p>
+      </div>
+
+      <!-- React -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-10 h-10 mb-2" alt="React">
+        <p class="text-gray-800 dark:text-white text-sm">React</p>
+      </div>
+
+      <!-- Angular -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" class="w-10 h-10 mb-2" alt="Angular">
+        <p class="text-gray-800 dark:text-white text-sm">Angular</p>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="w-10 h-10 mb-2" alt="Bootstrap">
+        <p class="text-gray-800 dark:text-white text-sm">Bootstrap</p>
+      </div>
+
+      <!-- TypeScript -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="w-10 h-10 mb-2" alt="TypeScript">
+        <p class="text-gray-800 dark:text-white text-sm">TypeScript</p>
+      </div>
+
+      <!-- Python -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-10 h-10 mb-2" alt="Python">
+        <p class="text-gray-800 dark:text-white text-sm">Python</p>
+      </div>
+
+      <!-- Flask -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="w-10 h-10 mb-2" alt="Flask">
+        <p class="text-gray-800 dark:text-white text-sm">Flask</p>
+      </div>
+
+      <!-- Node.js -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-10 h-10 mb-2" alt="Node.js">
+        <p class="text-gray-800 dark:text-white text-sm">Node.js</p>
+      </div>
+
+      <!-- Jira -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" class="w-10 h-10 mb-2" alt="Jira">
+        <p class="text-gray-800 dark:text-white text-sm">Jira</p>
+      </div>
+
+      <!-- Figma -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="w-10 h-10 mb-2" alt="Figma">
+        <p class="text-gray-800 dark:text-white text-sm">Figma</p>
+      </div>
+
+      <!-- HTML -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-10 h-10 mb-2" alt="HTML">
+        <p class="text-gray-800 dark:text-white text-sm">HTML</p>
+      </div>
+
+      <!-- CSS -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-10 h-10 mb-2" alt="CSS">
+        <p class="text-gray-800 dark:text-white text-sm">CSS</p>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-10 h-10 mb-2" alt="JavaScript">
+        <p class="text-gray-800 dark:text-white text-sm">JavaScript</p>
+      </div>
+
+      <!-- React -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-10 h-10 mb-2" alt="React">
+        <p class="text-gray-800 dark:text-white text-sm">React</p>
+      </div>
+
+      <!-- Angular -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" class="w-10 h-10 mb-2" alt="Angular">
+        <p class="text-gray-800 dark:text-white text-sm">Angular</p>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="w-10 h-10 mb-2" alt="Bootstrap">
+        <p class="text-gray-800 dark:text-white text-sm">Bootstrap</p>
+      </div>
+
+      <!-- TypeScript -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="w-10 h-10 mb-2" alt="TypeScript">
+        <p class="text-gray-800 dark:text-white text-sm">TypeScript</p>
+      </div>
+
+      <!-- Python -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-10 h-10 mb-2" alt="Python">
+        <p class="text-gray-800 dark:text-white text-sm">Python</p>
+      </div>
+
+      <!-- Flask -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="w-10 h-10 mb-2" alt="Flask">
+        <p class="text-gray-800 dark:text-white text-sm">Flask</p>
+      </div>
+
+      <!-- Node.js -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-10 h-10 mb-2" alt="Node.js">
+        <p class="text-gray-800 dark:text-white text-sm">Node.js</p>
+      </div>
+
+      <!-- Jira -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" class="w-10 h-10 mb-2" alt="Jira">
+        <p class="text-gray-800 dark:text-white text-sm">Jira</p>
+      </div>
+
+      <!-- Figma -->
+      <div class="flex flex-col items-center min-w-[100px] bg-white/70 dark:bg-white/10 rounded-xl p-4 shadow">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="w-10 h-10 mb-2" alt="Figma">
+        <p class="text-gray-800 dark:text-white text-sm">Figma</p>
+      </div>
+      
+    </div>
+  </div>
+<!-- Skills Section -->
+<section class="my-16 px-4 w-full">
+  <h2 class="text-3xl font-bold text-center text-black dark:text-white mb-8">Skills</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+    
+    <!-- Programming Languages -->
+    <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
+      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Programming Languages:</h3>
+      <p class="text-gray-700 dark:text-gray-300">JavaScript, TypeScript, Python, SQL, Java, C/C++</p>
+    </div>
+
+    <!-- Frontend Development -->
+    <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
+      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Frontend Development:</h3>
+      <p class="text-gray-700 dark:text-gray-300">React, Next.js, Angular, Tailwind CSS, Bootstrap, HTML, CSS, SCSS</p>
+    </div>
+
+    <!-- Backend & APIs -->
+    <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
+      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Backend & APIs:</h3>
+      <p class="text-gray-700 dark:text-gray-300">Node.js, Express.js, Django, Flask, REST APIs, GraphQL</p>
+    </div>
+
+    <!-- Data & Analytics -->
+    <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
+      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Data & Analytics:</h3>
+      <p class="text-gray-700 dark:text-gray-300">Pandas, NumPy, Matplotlib, scikit-learn, MongoDB, MySQL, PostgreSQL, Tableau, Power BI, Excel</p>
+    </div>
+
+    <!-- Cloud & Deployment -->
+    <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
+      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Cloud & Deployment:</h3>
+      <p class="text-gray-700 dark:text-gray-300">AWS (S3, EC2, Lambda), Azure, Netlify, Vercel</p>
+    </div>
+
+    <!-- Tools & Collaboration -->
+    <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
+      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Tools & Collaboration:</h3>
+      <p class="text-gray-700 dark:text-gray-300">Git, GitHub, Docker, Webpack, CI/CD, Figma, Adobe XD, Framer Motion</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Experience Section -->
+<section id="experience" class="my-16 px-4 w-full">
+  <h2 class="text-3xl font-bold text-center text-black dark:text-white mb-8">Experience</h2>
+
+  <div class="max-w-4xl mx-auto space-y-6 text-sm text-gray-800 dark:text-gray-200">
+
+    <!-- Kaar Technologies -->
+    <div class="flex items-start gap-4 bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
+      <!-- Logo -->
+      <img src="assets/kaar logo.png" alt="Kaar Technologies Logo" class="w-12 h-12 object-contain mt-1">
+      <!-- Text -->
+      <div>
+        <h3 class="text-lg font-semibold text-black dark:text-white">Tech Sergeant – Kaar Technologies, India</h3>
+        <p class="text-sm italic mb-1">Oct 2022 – Jun 2023</p>
+        <ul class="list-disc list-inside text-sm">
+          <li>Developed Salesforce web app with Angular & Flask; built Power BI dashboards</li>
+          <li>Integrated SAP HANA, FICO & S/4HANA modules</li>
+          <li>Built ML pipelines for analytics & process automation</li>
+          <li>Debugged SAP workflows using ABAP tools</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- AICTE AWS Virtual Internship -->
+    <div class="flex items-start gap-4 bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
+      <!-- Logo -->
+      <img src="assets/aicte logo.png" alt="AICTE Logo" class="w-12 h-12 object-contain mt-1">
+      <!-- Text -->
+      <div>
+        <h3 class="text-lg font-semibold text-black dark:text-white">Cloud Intern – AICTE Virtual Internship | AWS Academy</h3>
+        <p class="text-sm italic mb-1">Oct 2021 – Dec 2021</p>
+        <ul class="list-disc list-inside text-sm">
+          <li>Worked hands-on with AWS services: EC2, S3, IAM, VPC</li>
+          <li>Built & deployed secure cloud apps with CI/CD and cost optimization</li>
+          <li>Explored security best practices & performance enhancements</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Education Section -->
+<section class="my-16 px-4 w-full">
+  <h2 class="text-3xl font-bold text-center text-black dark:text-white mb-8">Education</h2>
+
+  <div class="max-w-4xl mx-auto space-y-6 text-sm text-gray-800 dark:text-gray-200">
+
+    <!-- Clark University -->
+    <div class="flex items-start gap-4 bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
+      <!-- Logo -->
+      <img src="assets/Clark logo.png" alt="Clark University Logo" class="w-12 h-12 object-contain mt-1">
+      <!-- Text -->
+      <div>
+        <h3 class="text-lg font-semibold text-black dark:text-white">Clark University, Worcester, MA</h3>
+        <p class="text-sm italic mb-1">Master of Science in Computer Science</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Aug 2023 – May 2025 &nbsp; | &nbsp; GPA: 3.8/4</p>
+        <p class="text-sm">Coursework: Applied Machine Learning, Software Engineering, Cloud Computing, Data Analytics, Design & Analysis of Algorithms</p>
+      </div>
+    </div>
+
+    <!-- Vel Tech -->
+    <div class="flex items-start gap-4 bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
+      <!-- Logo -->
+      <img src="assets/Veltech logo.png" alt="Veltech logo" class="w-12 h-12 object-contain mt-1">
+      <!-- Text -->
+      <div>
+        <h3 class="text-lg font-semibold text-black dark:text-white">Vel Tech Institute of Science and Technology, Chennai, India</h3>
+        <p class="text-sm italic mb-1">Bachelor of Technology in Computer Science and Engineering</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Jun 2019 – May 2023 &nbsp; | &nbsp; CGPA: 9.14/10</p>
+        <p class="text-sm">Coursework: Operating Systems, Data Structures, AI/ML/DL, Cloud Computing, Mobile App Development</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 px-6 max-w-6xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-10 text-center text-texttone-charcoal">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="bg-pastel-mint dark:bg-gray-800 p-6 rounded-xl shadow-md">
+        <img src="assets/images/project1.png" alt="Project 1" class="mb-4 rounded-md">
+        <h3 class="text-xl font-semibold mb-2">Pet Life Companion</h3>
+        <p>MERN stack app for pet care scheduling. Features JWT auth, AWS deploy, and calendar sync.</p>
+      </div>
+      <div class="bg-pastel-mint dark:bg-gray-800 p-6 rounded-xl shadow-md">
+        <img src="assets/images/project2.png" alt="Project 2" class="mb-4 rounded-md">
+        <h3 class="text-xl font-semibold mb-2">Art Marketplace</h3>
+        <p>React + Tailwind platform to sell handmade art. Integrated Stripe, Firebase, responsive design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 text-texttone-slate">Let’s Connect</h2>
+    <p class="mb-6">Reach out if you'd like to collaborate, chat, or hire me!</p>
+    <div class="mt-4 flex justify-center gap-2 items-center text-lg">
+      <span class="iconify text-2xl text-pink-600" data-icon="mdi:email-outline" data-inline="false"></span>
+      <a href="mailto:bhavishamallareddy@gmail.com" class="text-pink-600 hover:underline">bhavishamallareddy@gmail.com</a>
+    </div>    
+    <div class="mt-6 flex justify-center gap-6 text-3xl">
+      <a href="https://linkedin.com/in/bhavishareddy" target="_blank" class="hover:text-pink-500 transition" aria-label="LinkedIn">
+        <span class="iconify" data-icon="mdi:linkedin" data-inline="false"></span>
+      </a>
+      <a href="https://github.com/bhavishareddy" target="_blank" class="hover:text-pink-500 transition" aria-label="GitHub">
+        <span class="iconify" data-icon="mdi:github" data-inline="false"></span>
+      </a>
+      <a href="https://instagram.com/infinite.huess" target="_blank" class="hover:text-pink-500 transition" aria-label="Instagram">
+        <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
+      </a>
+    </div>    
+</section>
+
+  <!-- Footer Wave Section -->
+<div class="relative w-full overflow-hidden z-0">
+    <div class="w-full pointer-events-none">
+      <svg class="absolute w-full h-full wave wave1" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,160 C240,80 480,240 720,160 C960,80 1200,240 1440,160 L1440,320 L0,320 Z" fill="#d6c4ef" />
+      </svg>
+      <svg class="absolute w-full h-full wave wave2" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,180 C240,100 480,260 720,180 C960,100 1200,260 1440,180 L1440,320 L0,320 Z" fill="#c4a3e9" opacity="0.8" />
+      </svg>
+      <svg class="absolute w-full h-full wave wave3" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,200 C240,120 480,280 720,200 C960,120 1200,280 1440,200 L1440,320 L0,320 Z" fill="#b17bd9" opacity="0.7" />
+      </svg>
+    </div>
+
+    <footer class="relative z-10 pt-24 pb-10 text-xs text-white font-inter w-full text-center">
+      <div class="flex justify-between items-center px-6">
+        <div class="w-1/3"></div>
+        <div class="w-1/3 text-center">Crafting with Code, Logic and <a href="https://www.instagram.com/infinite.huess" class="underline hover:text-pink-400">Infinite hues.</a>💜</div>
+        <div class="w-1/3 text-right">© 2025 Bhavisha. All rights reserved.</div>
+      </div>
+    </footer>
+</div>
+<!--button-->
+<div id="resumeModal" class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 hidden">
+  <div class="bg-[#f3e9fc] dark:bg-[#1f112b] text-[#1f1f1f] dark:text-[#f0e9f9] p-6 rounded-xl shadow-2xl max-w-sm w-full relative">
+    <button onclick="toggleModal()" class="absolute top-2 right-3 text-gray-500 hover:text-pink-500 text-xl">&times;</button>
+    <h2 class="text-xl font-semibold mb-3">Resume Access</h2>
+    <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">Click below and I'll get back to you shortly!</p>
+    <a href="https://drive.google.com/file/d/1WCGZOmvD3mtD_7s8XHxQSbzoIQJXtOUB/view?usp=sharing" target="_blank" class="inline-block bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">Open Resume Request</a>
+  </div>
+</div>
+<!--button-->  
+
+<script>AOS.init();</script>
+</body>
+</html>
