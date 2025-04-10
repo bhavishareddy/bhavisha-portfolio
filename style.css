@@ -34,28 +34,28 @@
   opacity: 0.7;
 }
 
-/* Wave Animation */
-@keyframes waveFloat1 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-@keyframes waveFloat2 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-}
-@keyframes waveFloat3 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-16px); }
+/* Up & Down Wave Motion */
+@keyframes waveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
 }
 
-.wave {
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+.animate-wave-slow {
+  animation: waveUpDown 6s ease-in-out infinite;
 }
-.wave1 { animation: waveFloat1 6s infinite; }
-.wave2 { animation: waveFloat2 5s infinite; }
-.wave3 { animation: waveFloat3 4s infinite; }
+
+.animate-wave-mid {
+  animation: waveUpDown 4s ease-in-out infinite;
+}
+
+.animate-wave-fast {
+  animation: waveUpDown 3s ease-in-out infinite;
+}
+
 
 
 html {
@@ -77,4 +77,21 @@ html {
 
 .animate-marquee:hover {
   animation-play-state: paused;
+}
+
+.cert-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }

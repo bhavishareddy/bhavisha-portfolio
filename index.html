@@ -9,7 +9,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="scripts/main.js" defer></script>
+  <script src="main.js"></script>
+
 
   <!-- Tailwind Config -->
   <script>
@@ -50,6 +53,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body class="bg-pastel-lilac text-texttone-slate dark:bg-[#0f0f11] dark:text-white font-playfair">
@@ -58,17 +62,18 @@
   <div class="blur-bg-light dark:hidden"></div>
 
   <!-- Theme Toggle -->
-  <button id="theme-toggle" class="fixed top-6 left-6 z-50 text-xl p-2 rounded-full bg-pastel-mint dark:bg-white/10 backdrop-blur-md hover:scale-105 transition">
+  <button id="theme-toggle" class="fixed top-6 left-6 z-50 text-xl p-2 rounded-full bg-[#fff9fb] dark:bg-white/10 backdrop-blur-md hover:scale-105 transition">
     🌙
   </button>
 
   <!-- Navigation -->
-  <nav class="fixed top-6 right-6 z-50 bg-pastel-mint dark:bg-black/50 backdrop-blur-md px-6 py-3 rounded-xl shadow text-sm text-black dark:text-white hidden md:flex space-x-4">
+  <nav class="fixed top-6 right-6 z-50 bg-[#fff9fb] dark:bg-black/50 backdrop-blur-md px-6 py-3 rounded-xl shadow text-sm text-black dark:text-white hidden md:flex space-x-4">
     <a href="#hero" class="hover:text-pink-300">Home</a>
     <a href="#about" class="hover:text-pink-300">About</a>
     <a href="#skills" class="hover:text-pink-300">Skills</a>
     <a href="#experience" class="hover:text-pink-300">Experience</a>
     <a href="#projects" class="hover:text-pink-300">Projects</a>
+    <a href="#recognitions" class="hover:text-pink-300">Recognitions</a>
     <a href="#contact" class="hover:text-pink-300">Contact</a>
   </nav>
 
@@ -99,7 +104,7 @@
   <section id="about" class="py-24 px-6 max-w-6xl mx-auto" data-aos="fade-up">
     <div class="border border-white/10 bg-white/90 dark:bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl px-8 py-10 md:py-16 md:px-12">
       <!-- ⬇️ Insert the two-column layout (text + image) here -->
-      <h2 class="text-3xl font-bold mb-6 text-center text-texttone-mauve">About Me</h2>
+      <h2 class="text-3xl font-bold mb-6 text-center text-texttone-mauve dark:text-pink-400">About Me</h2>
       <div class="flex flex-col md:flex-row items-start md:items-center gap-10">
         <!-- Text Column -->
         <div class="md:w-2/3 space-y-5 text-justify">
@@ -107,7 +112,7 @@
           <p>
             Hey there! I’m Bhavisha Reddy — an aspiring software engineer passionate about frontend development and user-centric design. I’m currently pursuing my Master’s in Computer Science at Clark University, where I continue to deepen my skills. I specialize in technologies like React, Tailwind CSS, HTML, CSS, Python, and modern JavaScript frameworks. I also have professional experience with Angular and Flask, AWS, and a solid foundation in Azure, CI/CD pipelines, and Agile methodologies.
           <p>
-            Outside of tech, you’ll often find me on the badminton court or getting lost in layers of acrylic paint and mandala — an eye for color and detail that naturally flows into my UI. I'm also a proud former NCC cadet (India’s national youth military program) which taught me discipline, resilience, leadership and the power of team spirit early in life.
+            Outside of tech, you’ll often find me on the badminton court🏸 or getting lost in layers of acrylic paint🎨 and mandala — an eye for color and detail that naturally flows into my UI. I'm also a proud former NCC cadet🎖️ (India’s national youth military program) which taught me discipline, resilience, leadership and the power of team spirit early in life.
           </p>
           <p>
             I’m well-equipped with skills across diverse domains including software engineering, full-stack development, data analysis, and cloud technologies. I believe in building purposeful, performant applications that merge design clarity with engineering precision. I stay adaptable, continuously refine my skills, and find energy in solving meaningful problems that make real impact.
@@ -126,9 +131,9 @@
 
 <!-- Tech Stack Section -->
 <section id="skills" class="my-16 px-4 w-full">
-  <h2 class="text-3xl font-bold text-center text-black dark:text-white mb-6">What I Use to Build Stuff</h2>
+  <h2 class="text-3xl font-bold text-center text-pink-500 dark:text-purple-200 mb-6">What I Use to Build Stuff</h2>
 
-  <div class="w-full py-6 border-y border-gray-200 dark:border-white/10 bg-[#d4f8e8] dark:bg-black overflow-hidden">
+  <div class="w-full py-6 border-y border-gray-200 dark:border-white/10 bg-[#fff9fb] dark:bg-black overflow-hidden">
     <div class="flex gap-6 animate-marquee whitespace-nowrap">
 
       <!-- HTML -->
@@ -279,7 +284,7 @@
   </div>
 <!-- Skills Section -->
 <section class="my-16 px-4 w-full">
-  <h2 class="text-3xl font-bold text-center text-black dark:text-white mb-8">Skills</h2>
+  <h2 class="text-3xl font-bold text-center text-purple-500 dark:text-yellow-200 mb-8">Skills</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
     
@@ -325,15 +330,14 @@
 
 <!-- Experience Section -->
 <section id="experience" class="my-16 px-4 w-full">
-  <h2 class="text-3xl font-bold text-center text-black dark:text-white mb-8">Experience</h2>
+  <h2 class="text-3xl font-bold text-center text-pink-500 dark:text-pink-300 mb-8" data-aos="fade-down">Experience</h2>
 
   <div class="max-w-4xl mx-auto space-y-6 text-sm text-gray-800 dark:text-gray-200">
 
     <!-- Kaar Technologies -->
-    <div class="flex items-start gap-4 bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
-      <!-- Logo -->
+    <div class="flex items-start gap-4 bg-white/90 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10"
+         data-aos="fade-up" data-aos-delay="100">
       <img src="assets/kaar logo.png" alt="Kaar Technologies Logo" class="w-12 h-12 object-contain mt-1">
-      <!-- Text -->
       <div>
         <h3 class="text-lg font-semibold text-black dark:text-white">Tech Sergeant – Kaar Technologies, India</h3>
         <p class="text-sm italic mb-1">Oct 2022 – Jun 2023</p>
@@ -346,11 +350,10 @@
       </div>
     </div>
 
-    <!-- AICTE AWS Virtual Internship -->
-    <div class="flex items-start gap-4 bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
-      <!-- Logo -->
+    <!-- AICTE AWS Internship -->
+    <div class="flex items-start gap-4 bg-white/90 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10"
+         data-aos="fade-up" data-aos-delay="200">
       <img src="assets/aicte logo.png" alt="AICTE Logo" class="w-12 h-12 object-contain mt-1">
-      <!-- Text -->
       <div>
         <h3 class="text-lg font-semibold text-black dark:text-white">Cloud Intern – AICTE Virtual Internship | AWS Academy</h3>
         <p class="text-sm italic mb-1">Oct 2021 – Dec 2021</p>
@@ -363,18 +366,18 @@
     </div>
 
   </div>
+</section>
 
 <!-- Education Section -->
 <section class="my-16 px-4 w-full">
-  <h2 class="text-3xl font-bold text-center text-black dark:text-white mb-8">Education</h2>
+  <h2 class="text-3xl font-bold text-center text-purple-500 dark:text-yellow-200 mb-8" data-aos="fade-down">Education</h2>
 
   <div class="max-w-4xl mx-auto space-y-6 text-sm text-gray-800 dark:text-gray-200">
 
-    <!-- Clark University -->
-    <div class="flex items-start gap-4 bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
-      <!-- Logo -->
+    <!-- Clark -->
+    <div class="flex items-start gap-4 bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10"
+         data-aos="fade-up" data-aos-delay="100">
       <img src="assets/Clark logo.png" alt="Clark University Logo" class="w-12 h-12 object-contain mt-1">
-      <!-- Text -->
       <div>
         <h3 class="text-lg font-semibold text-black dark:text-white">Clark University, Worcester, MA</h3>
         <p class="text-sm italic mb-1">Master of Science in Computer Science</p>
@@ -384,10 +387,9 @@
     </div>
 
     <!-- Vel Tech -->
-    <div class="flex items-start gap-4 bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
-      <!-- Logo -->
+    <div class="flex items-start gap-4 bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10"
+         data-aos="fade-up" data-aos-delay="200">
       <img src="assets/Veltech logo.png" alt="Veltech logo" class="w-12 h-12 object-contain mt-1">
-      <!-- Text -->
       <div>
         <h3 class="text-lg font-semibold text-black dark:text-white">Vel Tech Institute of Science and Technology, Chennai, India</h3>
         <p class="text-sm italic mb-1">Bachelor of Technology in Computer Science and Engineering</p>
@@ -399,77 +401,222 @@
   </div>
 </section>
 
-
+  
   <!-- Projects Section -->
-  <section id="projects" class="py-24 px-6 max-w-6xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-10 text-center text-texttone-charcoal">Projects</h2>
-    <div class="grid md:grid-cols-2 gap-12">
-      <div class="bg-pastel-mint dark:bg-gray-800 p-6 rounded-xl shadow-md">
-        <img src="assets/images/project1.png" alt="Project 1" class="mb-4 rounded-md">
-        <h3 class="text-xl font-semibold mb-2">Pet Life Companion</h3>
-        <p>MERN stack app for pet care scheduling. Features JWT auth, AWS deploy, and calendar sync.</p>
-      </div>
-      <div class="bg-pastel-mint dark:bg-gray-800 p-6 rounded-xl shadow-md">
-        <img src="assets/images/project2.png" alt="Project 2" class="mb-4 rounded-md">
-        <h3 class="text-xl font-semibold mb-2">Art Marketplace</h3>
-        <p>React + Tailwind platform to sell handmade art. Integrated Stripe, Firebase, responsive design.</p>
-      </div>
-    </div>
-  </section>
+<section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold mb-10 text-center text-texttone-mauve dark:text-pink-400" data-aos="fade-up">Projects</h2>
 
-  <!-- Contact -->
-  <section id="contact" class="py-24 px-6 text-center" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4 text-texttone-slate">Let’s Connect</h2>
-    <p class="mb-6">Reach out if you'd like to collaborate, chat, or hire me!</p>
-    <div class="mt-4 flex justify-center gap-2 items-center text-lg">
-      <span class="iconify text-2xl text-pink-600" data-icon="mdi:email-outline" data-inline="false"></span>
-      <a href="mailto:bhavishamallareddy@gmail.com" class="text-pink-600 hover:underline">bhavishamallareddy@gmail.com</a>
-    </div>    
-    <div class="mt-6 flex justify-center gap-6 text-3xl">
-      <a href="https://linkedin.com/in/bhavishareddy" target="_blank" class="hover:text-pink-500 transition" aria-label="LinkedIn">
-        <span class="iconify" data-icon="mdi:linkedin" data-inline="false"></span>
-      </a>
-      <a href="https://github.com/bhavishareddy" target="_blank" class="hover:text-pink-500 transition" aria-label="GitHub">
-        <span class="iconify" data-icon="mdi:github" data-inline="false"></span>
-      </a>
-      <a href="https://instagram.com/infinite.huess" target="_blank" class="hover:text-pink-500 transition" aria-label="Instagram">
-        <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
-      </a>
-    </div>    
+  <div class="grid md:grid-cols-2 gap-10">
+    
+    <!-- Pet Life Companion -->
+    <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">Pet Life Companion</h3>
+      <p class="text-sm mb-3 dark:text-gray-300">MERN app for centralized pet care — profiles, reminders, and secure access.</p>
+      <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
+        <li>Automated SMS/email + calendar sync</li>
+        <li>JWT/OAuth + AES-256 security and CI/CD on AWS EC2, uptime 99.9%</li>
+      </ul>
+      <p class="text-xs italic text-gray-600 dark:text-gray-400">Tech: React, Node.js, Express, MongoDB, Redux</p>
+    </div>
+
+    <!-- YouTube Clone -->
+    <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">YouTube Clone</h3>
+      <p class="text-sm mb-3 dark:text-gray-300">Responsive web application mimicking core YouTube functions.</p>
+      <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
+        <li>Search, suggestions, API polling</li>
+        <li>Debouncing & LRU cache</li>
+      </ul>
+      <p class="text-xs italic text-gray-600 dark:text-gray-400">Tech: React, Redux, Tailwind CSS</p>
+    </div>
+
+    <!-- Grocery Delivery App -->
+    <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">Grocery Delivery App</h3>
+      <p class="text-sm mb-3 dark:text-gray-300">User-friendly grocery delivery platform for locals.</p>
+      <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
+        <li>Exploring grocery categories</li>
+        <li>Focus on UX and speed</li>
+      </ul>
+      <p class="text-xs italic text-gray-600 dark:text-gray-400">Tech: React Native / Node.js / MongoDB</p>
+    </div>
+
+    <!-- Sentiment Analysis -->
+    <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="400">
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">Sentiment Analysis – Amazon Reviews</h3>
+      <p class="text-sm mb-3 dark:text-gray-300">BERT-powered NLP pipeline for analyzing 100k+ product reviews.</p>
+      <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
+        <li>92% accuracy on sentiment classification</li>
+        <li>Insights visualized in Tableau</li>
+      </ul>
+      <p class="text-xs italic text-gray-600 dark:text-gray-400">Tech: Python, BERT, scikit-learn, Tableau</p>
+    </div>
+
+    <!-- House Price Prediction -->
+    <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="500">
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">House Price Prediction</h3>
+      <p class="text-sm mb-3 dark:text-gray-300">Regression-based ML model for estimating real estate prices.</p>
+      <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
+        <li>R² score of 92%, 15% lower MAE</li>
+        <li>Live dashboards using Power BI</li>
+      </ul>
+      <p class="text-xs italic text-gray-600 dark:text-gray-400">Tech: XGBoost, Random Forest, Power BI, AWS SageMaker</p>
+    </div>
+
+    <!-- COVID-19 X-ray Classification -->
+    <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="600">
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">COVID-19 X-ray Classification</h3>
+      <p class="text-sm mb-3 dark:text-gray-300">CNN model using ResNet-50 to identify COVID in X-rays.</p>
+      <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
+        <li>89% classification accuracy</li>
+        <li>Automated diagnosis with fast preprocessing</li>
+      </ul>
+      <p class="text-xs italic text-gray-600 dark:text-gray-400">Tech: Python, ResNet-50, OpenCV</p>
+    </div>
+
+  </div>
 </section>
 
-  <!-- Footer Wave Section -->
-<div class="relative w-full overflow-hidden z-0">
-    <div class="w-full pointer-events-none">
-      <svg class="absolute w-full h-full wave wave1" viewBox="0 0 1440 320" preserveAspectRatio="none">
-        <path d="M0,160 C240,80 480,240 720,160 C960,80 1200,240 1440,160 L1440,320 L0,320 Z" fill="#d6c4ef" />
-      </svg>
-      <svg class="absolute w-full h-full wave wave2" viewBox="0 0 1440 320" preserveAspectRatio="none">
-        <path d="M0,180 C240,100 480,260 720,180 C960,100 1200,260 1440,180 L1440,320 L0,320 Z" fill="#c4a3e9" opacity="0.8" />
-      </svg>
-      <svg class="absolute w-full h-full wave wave3" viewBox="0 0 1440 320" preserveAspectRatio="none">
-        <path d="M0,200 C240,120 480,280 720,200 C960,120 1200,280 1440,200 L1440,320 L0,320 Z" fill="#b17bd9" opacity="0.7" />
-      </svg>
-    </div>
 
-    <footer class="relative z-10 pt-24 pb-10 text-xs text-white font-inter w-full text-center">
-      <div class="flex justify-between items-center px-6">
-        <div class="w-1/3"></div>
-        <div class="w-1/3 text-center">Crafting with Code, Logic and <a href="https://www.instagram.com/infinite.huess" class="underline hover:text-pink-400">Infinite hues.</a>💜</div>
-        <div class="w-1/3 text-right">© 2025 Bhavisha. All rights reserved.</div>
+<!---->
+<!-- Certifications & Recognitions -->
+<section id="recognitions" class="py-24 px-6 max-w-6xl mx-auto" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-10 text-center text-purple-500 dark:text-yellow-200" data-aos="fade-down">Certifications & Recognitions</h2>
+
+  <!-- Certifications Grid -->
+  <div class="grid md:grid-cols-2 gap-8 text-sm text-gray-800 dark:text-gray-200 mb-16">
+
+    <!-- Azure -->
+    <a href="https://learn.microsoft.com/en-us/users/gogulabhavishareddy-0389/credentials/89a25fb507194c4?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank"
+      class="cert-card flex items-center gap-4 bg-[#fff9fb] dark:bg-white/10 rounded-xl p-5 shadow hover:shadow-lg transition"
+      data-aos="fade-up" data-aos-delay="100">
+      <img src="assets/Microsoft Logo.svg" alt="Azure Logo" class="w-10 h-10 object-contain" />
+      <div class="flex-1">
+        <h3 class="text-lg font-semibold text-black dark:text-white flex items-center gap-2">
+          Microsoft Azure Fundamentals
+          <span class="iconify text-pink-500 text-base" data-icon="mdi:open-in-new"></span>
+        </h3>
       </div>
-    </footer>
-</div>
-<!--button-->
-<div id="resumeModal" class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 hidden">
-  <div class="bg-[#f3e9fc] dark:bg-[#1f112b] text-[#1f1f1f] dark:text-[#f0e9f9] p-6 rounded-xl shadow-2xl max-w-sm w-full relative">
-    <button onclick="toggleModal()" class="absolute top-2 right-3 text-gray-500 hover:text-pink-500 text-xl">&times;</button>
-    <h2 class="text-xl font-semibold mb-3">Resume Access</h2>
-    <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">Click below and I'll get back to you shortly!</p>
-    <a href="https://drive.google.com/file/d/1WCGZOmvD3mtD_7s8XHxQSbzoIQJXtOUB/view?usp=sharing" target="_blank" class="inline-block bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">Open Resume Request</a>
+    </a>
+
+    <!-- Oracle -->
+    <a href="https://drive.google.com/file/d/1k4ky1yPs3Y69dYtNPKX-AvGrJIkdeloQ/view" target="_blank"
+      class="cert-card flex items-center gap-4 bg-[#fff9fb] dark:bg-white/10 rounded-xl p-5 shadow hover:shadow-lg transition"
+      data-aos="fade-up" data-aos-delay="200">
+      <img src="assets/Oracle logo.png" alt="Oracle Logo" class="w-10 h-10 object-contain" />
+      <div class="flex-1">
+        <h3 class="text-lg font-semibold text-black dark:text-white flex items-center gap-2">
+          Oracle Cloud Associate
+          <span class="iconify text-pink-500 text-base" data-icon="mdi:open-in-new"></span>
+        </h3>
+      </div>
+    </a>
+
+    <!-- Python -->
+    <a href="https://www.hackerrank.com/certificates/iframe/728d2653e3d9" target="_blank"
+      class="cert-card flex items-center gap-4 bg-[#fff9fb] dark:bg-white/10 rounded-xl p-5 shadow hover:shadow-lg transition"
+      data-aos="fade-up" data-aos-delay="300">
+      <img src="assets/HackerRank logo.png" alt="Python Logo" class="w-10 h-10 object-contain" />
+      <div class="flex-1">
+        <h3 class="text-lg font-semibold text-black dark:text-white flex items-center gap-2">
+          Python – HackerRank
+          <span class="iconify text-pink-500 text-base" data-icon="mdi:open-in-new"></span>
+        </h3>
+      </div>
+    </a>
+
+    <!-- SQL -->
+    <a href="https://www.hackerrank.com/certificates/iframe/b4decd7ec7e8" target="_blank"
+      class="cert-card flex items-center gap-4 bg-[#fff9fb] dark:bg-white/10 rounded-xl p-5 shadow hover:shadow-lg transition"
+      data-aos="fade-up" data-aos-delay="400">
+      <img src="assets/HackerRank logo.png" alt="SQL Logo" class="w-10 h-10 object-contain" />
+      <div class="flex-1">
+        <h3 class="text-lg font-semibold text-black dark:text-white flex items-center gap-2">
+          SQL – HackerRank
+          <span class="iconify text-pink-500 text-base" data-icon="mdi:open-in-new"></span>
+        </h3>
+      </div>
+    </a>
+
   </div>
+
+  <!-- Publication -->
+  <div class="bg-pastel-lilac dark:bg-white/5 rounded-xl p-6 shadow text-gray-800 dark:text-gray-200 max-w-4xl mx-auto"
+    data-aos="zoom-in" data-aos-delay="500">
+    <h3 class="text-xl font-bold mb-3 text-pink-500 dark:text-pink-100">Research Publication</h3>
+    <p class="mb-2 font-medium text-base text-black dark:text-white leading-relaxed">
+      “Corpus-Based Hashing Count Frequency Vectorization for Sentiment Analysis of Movie Reviews”
+    </p>
+    <p class="text-sm italic mb-3">Presented at ICCIS, Dec 2021</p>
+    <a href="https://www.researchgate.net/publication/362773167_Corpus-Based_Hashing_Count_Frequency_Vectorization_of_Sentiment_Analysis_of_Movie_Reviews"
+      target="_blank" class="text-pink-600 hover:underline text-base">View Publication</a>
+  </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="py-24 px-6 text-center" data-aos="fade-up">
+  <h2 class="text-4xl font-bold mb-4 text-texttone-mauve dark:text-yellow-200">Let’s Connect 💌</h2>
+  <p class="mb-6 text-lg text-gray-700 dark:text-pink-100">Reach out if you'd like to collaborate, chat, or hire me — would be happy to connect! ✨</p>
+
+  <!-- Email -->
+  <div class="mt-4 flex justify-center gap-2 items-center text-xl">
+    <span class="iconify text-3xl text-pink-500" data-icon="mdi:email-outline" data-inline="false"></span>
+    <a href="mailto:bhavishamallareddy@gmail.com" class="text-pink-600 hover:underline">bhavishamallareddy@gmail.com</a>
+  </div>    
+
+  <!-- Socials -->
+  <div class="mt-8 flex justify-center gap-8 text-4xl">
+    <a href="https://linkedin.com/in/bhavishareddy" target="_blank" class="hover:text-pink-500 transition transform hover:scale-110" title="LinkedIn">
+      <span class="iconify" data-icon="mdi:linkedin" data-inline="false"></span>
+    </a>
+    <a href="https://github.com/bhavishareddy" target="_blank" class="hover:text-pink-500 transition transform hover:scale-110" title="GitHub">
+      <span class="iconify" data-icon="mdi:github" data-inline="false"></span>
+    </a>
+    <a href="https://instagram.com/infinite.huess" target="_blank" class="hover:text-pink-500 transition transform hover:scale-110" title="Instagram">
+      <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
+    </a>
+  </div>
+</section>
+
+
+<!-- Footer Wave Section -->
+<div class="relative w-full overflow-hidden z-0">
+  <div class="w-full pointer-events-none relative h-64 sm:h-80 md:h-96">
+    
+    <!-- Wave 1 – Tallest, at the bottom -->
+    <svg class="absolute top-0 w-full h-full animate-wave-slow" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path d="M0,100 C240,40 480,160 720,100 C960,40 1200,160 1440,100 L1440,320 L0,320 Z" fill="#d6c4ef" />
+    </svg>
+    
+    <!-- Wave 2 – Medium height, slightly above -->
+    <svg class="absolute top-8 w-full h-full animate-wave-mid" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path d="M0,120 C240,60 480,180 720,120 C960,60 1200,180 1440,120 L1440,320 L0,320 Z" fill="#c4a3e9" opacity="0.8" />
+    </svg>
+    
+    <!-- Wave 3 – Shortest, spaced more from the top -->
+    <svg class="absolute top-16 w-full h-full animate-wave-fast" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path d="M0,140 C240,80 480,200 720,140 C960,80 1200,200 1440,140 L1440,320 L0,320 Z" fill="#b17bd9" opacity="0.7" />
+    </svg>
+  
+  </div>
+
+  <!-- Footer Content inside Waves -->
+  <footer class="relative z-10 -mt-36 pb-10 text-xs text-white font-inter w-full">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3 px-6 text-center sm:text-left">
+      <!-- Centered footer message -->
+      <div class="sm:w-1/2 w-full text-center sm:text-left">
+        Crafting with Code, Logic and 
+        <a href="https://www.instagram.com/infinite.huess" class="underline hover:text-pink-400">Infinite hues.</a> 💜
+      </div>
+      <!-- Right-aligned copyright -->
+      <div class="sm:w-1/2 w-full text-center sm:text-right">
+        © 2025 Bhavisha. All rights reserved.
+      </div>
+    </div>
+  </footer>
 </div>
-<!--button-->  
+
 
 <script>AOS.init();</script>
 </body>
