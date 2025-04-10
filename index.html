@@ -43,9 +43,11 @@
 
 <script>
   function toggleModal() {
-    document.getElementById("resumeModal").classList.toggle("hidden");
+    const modal = document.getElementById('resumeModal');
+    modal.classList.toggle('hidden');
   }
 </script>
+  
 
 
   <!-- Fonts & Styles -->
@@ -84,22 +86,20 @@
         Hello!<br>I am
         <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500">Bhavisha </span>
       </h1>
-      <p class="mt-4 text-texttone-charcoal dark:text-white/70 text-lg">• Aspiring Frontend Software Engineer • A Computer Science Graduate • Creator</p><br>
+      <p class="mt-4 text-texttone-charcoal dark:text-white/70 text-lg">• Aspiring Software Engineer • A Computer Science Graduate • Creator</p><br>
         <!-- Contact Me -->
         <a href="#contact" class="inline-flex items-center gap-2 px-6 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition duration-300">
           <span class="iconify" data-icon="mdi:email-outline"></span>
           Contact me
         </a>
-      
-        <!-- Download CV (opens modal) -->
-        <button onclick="toggleModal()" class="inline-flex items-center gap-2 px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition duration-300">
-          <span class="iconify" data-icon="mdi:file-document-outline"></span>
-          Resume
-        </button>             
-      </div>      
-      
+      <!-- Resume Button -->
+      <button onclick="toggleModal()" class="inline-flex items-center gap-2 px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition duration-300">
+        <span class="iconify" data-icon="mdi:file-document-outline"></span>
+           Resume
+      </button> 
     </div>
-  </section>
+</div>
+</section>
 
   <section id="about" class="py-24 px-6 max-w-6xl mx-auto" data-aos="fade-up">
     <div class="border border-white/10 bg-white/90 dark:bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl px-8 py-10 md:py-16 md:px-12">
@@ -284,44 +284,44 @@
   </div>
 <!-- Skills Section -->
 <section class="my-16 px-4 w-full">
-  <h2 class="text-3xl font-bold text-center text-purple-500 dark:text-yellow-200 mb-8">Skills</h2>
+  <h2 class="text-3xl font-bold text-center text-purple-500 dark:text-pink-400 mb-8">Skills</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
     
     <!-- Programming Languages -->
     <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
-      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Programming Languages:</h3>
-      <p class="text-gray-700 dark:text-gray-300">JavaScript, TypeScript, Python, SQL, Java, C/C++</p>
+      <h3 class="font-semibold text-lg text-black dark:text-yellow-200 mb-2">Programming Languages:</h3>
+      <p class="text-gray-700 dark:text-white">JavaScript, TypeScript, Python, SQL, Java, C/C++</p>
     </div>
 
     <!-- Frontend Development -->
     <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
-      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Frontend Development:</h3>
-      <p class="text-gray-700 dark:text-gray-300">React, Next.js, Angular, Tailwind CSS, Bootstrap, HTML, CSS, SCSS</p>
+      <h3 class="font-semibold text-lg text-black dark:text-yellow-200 mb-2">Frontend Development:</h3>
+      <p class="text-gray-700 dark:text-white">React, Next.js, Angular, Tailwind CSS, Bootstrap, HTML, CSS, SCSS</p>
     </div>
 
     <!-- Backend & APIs -->
     <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
-      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Backend & APIs:</h3>
-      <p class="text-gray-700 dark:text-gray-300">Node.js, Express.js, Django, Flask, REST APIs, GraphQL</p>
+      <h3 class="font-semibold text-lg text-black dark:text-yellow-200 mb-2">Backend & APIs:</h3>
+      <p class="text-gray-700 dark:text-white">Node.js, Express.js, Django, Flask, REST APIs, GraphQL</p>
     </div>
 
     <!-- Data & Analytics -->
     <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
-      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Data & Analytics:</h3>
-      <p class="text-gray-700 dark:text-gray-300">Pandas, NumPy, Matplotlib, scikit-learn, MongoDB, MySQL, PostgreSQL, Tableau, Power BI, Excel</p>
+      <h3 class="font-semibold text-lg text-black dark:text-yellow-200 mb-2">Data & Analytics:</h3>
+      <p class="text-gray-700 dark:text-white">Pandas, NumPy, Matplotlib, scikit-learn, MongoDB, MySQL, PostgreSQL, Tableau, Power BI, Excel</p>
     </div>
 
     <!-- Cloud & Deployment -->
     <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
-      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Cloud & Deployment:</h3>
-      <p class="text-gray-700 dark:text-gray-300">AWS (S3, EC2, Lambda), Azure, Netlify, Vercel</p>
+      <h3 class="font-semibold text-lg text-black dark:text-yellow-200 mb-2">Cloud & Deployment:</h3>
+      <p class="text-gray-700 dark:text-white">AWS (S3, EC2, Lambda), Azure, Netlify, Vercel</p>
     </div>
 
     <!-- Tools & Collaboration -->
     <div class="bg-[#f2f2f2]/70 dark:bg-white/10 rounded-xl p-5 shadow border border-gray-200 dark:border-white/10">
-      <h3 class="font-semibold text-lg text-black dark:text-white mb-2">Tools & Collaboration:</h3>
-      <p class="text-gray-700 dark:text-gray-300">Git, GitHub, Docker, Webpack, CI/CD, Figma, Adobe XD, Framer Motion</p>
+      <h3 class="font-semibold text-lg text-black dark:text-yellow-200 mb-2">Tools & Collaboration:</h3>
+      <p class="text-gray-700 dark:text-white">Git, GitHub, Docker, Webpack, CI/CD, Figma, Adobe XD, Framer Motion</p>
     </div>
 
   </div>
@@ -330,7 +330,7 @@
 
 <!-- Experience Section -->
 <section id="experience" class="my-16 px-4 w-full">
-  <h2 class="text-3xl font-bold text-center text-pink-500 dark:text-pink-300 mb-8" data-aos="fade-down">Experience</h2>
+  <h2 class="text-3xl font-bold text-center text-pink-500 dark:text-pink-400 mb-8" data-aos="fade-down">Experience</h2>
 
   <div class="max-w-4xl mx-auto space-y-6 text-sm text-gray-800 dark:text-gray-200">
 
@@ -339,7 +339,7 @@
          data-aos="fade-up" data-aos-delay="100">
       <img src="assets/kaar logo.png" alt="Kaar Technologies Logo" class="w-12 h-12 object-contain mt-1">
       <div>
-        <h3 class="text-lg font-semibold text-black dark:text-white">Tech Sergeant – Kaar Technologies, India</h3>
+        <h3 class="text-lg font-semibold text-black dark:text-yellow-200">Tech Sergeant | Kaar Technologies, India</h3>
         <p class="text-sm italic mb-1">Oct 2022 – Jun 2023</p>
         <ul class="list-disc list-inside text-sm">
           <li>Developed Salesforce web app with Angular & Flask; built Power BI dashboards</li>
@@ -355,7 +355,7 @@
          data-aos="fade-up" data-aos-delay="200">
       <img src="assets/aicte logo.png" alt="AICTE Logo" class="w-12 h-12 object-contain mt-1">
       <div>
-        <h3 class="text-lg font-semibold text-black dark:text-white">Cloud Intern – AICTE Virtual Internship | AWS Academy</h3>
+        <h3 class="text-lg font-semibold text-black dark:text-yellow-200"> AICTE Cloud Intern | AWS Academy</h3>
         <p class="text-sm italic mb-1">Oct 2021 – Dec 2021</p>
         <ul class="list-disc list-inside text-sm">
           <li>Worked hands-on with AWS services: EC2, S3, IAM, VPC</li>
@@ -370,7 +370,7 @@
 
 <!-- Education Section -->
 <section class="my-16 px-4 w-full">
-  <h2 class="text-3xl font-bold text-center text-purple-500 dark:text-yellow-200 mb-8" data-aos="fade-down">Education</h2>
+  <h2 class="text-3xl font-bold text-center text-purple-500 dark:text-pink-300 mb-8" data-aos="fade-down">Education</h2>
 
   <div class="max-w-4xl mx-auto space-y-6 text-sm text-gray-800 dark:text-gray-200">
 
@@ -379,7 +379,7 @@
          data-aos="fade-up" data-aos-delay="100">
       <img src="assets/Clark logo.png" alt="Clark University Logo" class="w-12 h-12 object-contain mt-1">
       <div>
-        <h3 class="text-lg font-semibold text-black dark:text-white">Clark University, Worcester, MA</h3>
+        <h3 class="text-lg font-semibold text-black dark:text-yellow-200">Clark University, Worcester, MA</h3>
         <p class="text-sm italic mb-1">Master of Science in Computer Science</p>
         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Aug 2023 – May 2025 &nbsp; | &nbsp; GPA: 3.8/4</p>
         <p class="text-sm">Coursework: Applied Machine Learning, Software Engineering, Cloud Computing, Data Analytics, Design & Analysis of Algorithms</p>
@@ -391,7 +391,7 @@
          data-aos="fade-up" data-aos-delay="200">
       <img src="assets/Veltech logo.png" alt="Veltech logo" class="w-12 h-12 object-contain mt-1">
       <div>
-        <h3 class="text-lg font-semibold text-black dark:text-white">Vel Tech Institute of Science and Technology, Chennai, India</h3>
+        <h3 class="text-lg font-semibold text-black dark:text-yellow-200">Vel Tech Institute of Science and Technology, Chennai, India</h3>
         <p class="text-sm italic mb-1">Bachelor of Technology in Computer Science and Engineering</p>
         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Jun 2019 – May 2023 &nbsp; | &nbsp; CGPA: 9.14/10</p>
         <p class="text-sm">Coursework: Operating Systems, Data Structures, AI/ML/DL, Cloud Computing, Mobile App Development</p>
@@ -410,7 +410,7 @@
     
     <!-- Pet Life Companion -->
     <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="100">
-      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">Pet Life Companion</h3>
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-yellow-200">Pet Life Companion</h3>
       <p class="text-sm mb-3 dark:text-gray-300">MERN app for centralized pet care — profiles, reminders, and secure access.</p>
       <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
         <li>Automated SMS/email + calendar sync</li>
@@ -421,7 +421,7 @@
 
     <!-- YouTube Clone -->
     <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="200">
-      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">YouTube Clone</h3>
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-yellow-200">YouTube Clone</h3>
       <p class="text-sm mb-3 dark:text-gray-300">Responsive web application mimicking core YouTube functions.</p>
       <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
         <li>Search, suggestions, API polling</li>
@@ -432,7 +432,7 @@
 
     <!-- Grocery Delivery App -->
     <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="300">
-      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">Grocery Delivery App</h3>
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-yellow-200">Grocery Delivery App</h3>
       <p class="text-sm mb-3 dark:text-gray-300">User-friendly grocery delivery platform for locals.</p>
       <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
         <li>Exploring grocery categories</li>
@@ -443,7 +443,7 @@
 
     <!-- Sentiment Analysis -->
     <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="400">
-      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">Sentiment Analysis – Amazon Reviews</h3>
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-yellow-200">Sentiment Analysis – Amazon Reviews</h3>
       <p class="text-sm mb-3 dark:text-gray-300">BERT-powered NLP pipeline for analyzing 100k+ product reviews.</p>
       <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
         <li>92% accuracy on sentiment classification</li>
@@ -454,7 +454,7 @@
 
     <!-- House Price Prediction -->
     <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="500">
-      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">House Price Prediction</h3>
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-yellow-200">House Price Prediction</h3>
       <p class="text-sm mb-3 dark:text-gray-300">Regression-based ML model for estimating real estate prices.</p>
       <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
         <li>R² score of 92%, 15% lower MAE</li>
@@ -465,9 +465,9 @@
 
     <!-- COVID-19 X-ray Classification -->
     <div class="project-card bg-[#fefcfd] dark:bg-white/10 rounded-xl p-6 shadow transition" data-aos="fade-up" data-aos-delay="600">
-      <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">COVID-19 X-ray Classification</h3>
+      <h3 class="text-xl font-semibold mb-2 text-black dark:text-yellow-200">COVID-19 X-ray Classification</h3>
       <p class="text-sm mb-3 dark:text-gray-300">CNN model using ResNet-50 to identify COVID in X-rays.</p>
-      <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mb-3">
+      <ul class="list-disc list-inside text-sm text-gray-700 dark:text-white mb-3">
         <li>89% classification accuracy</li>
         <li>Automated diagnosis with fast preprocessing</li>
       </ul>
@@ -615,6 +615,18 @@
       </div>
     </div>
   </footer>
+</div>
+
+<!-- Modal (Request Resume Access) -->
+<div id="resumeModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl max-w-sm text-center">
+    <h2 class="text-xl font-semibold text-gray-800 dark:text-white">View My Resume</h2>
+    <p class="mt-4 text-gray-600 dark:text-gray-300">Click below, I'll get back shortly.</p>
+    <div class="mt-6 flex justify-center gap-4">
+      <a href="https://drive.google.com/file/d/1WCGZOmvD3mtD_7s8XHxQSbzoIQJXtOUB/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">Request Access</a>
+      <button onclick="toggleModal()" class="px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-white rounded-full hover:bg-gray-400 dark:hover:bg-gray-500 transition">Cancel</button>
+    </div>
+  </div>
 </div>
 
 
