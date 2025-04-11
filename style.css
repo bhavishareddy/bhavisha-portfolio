@@ -95,3 +95,48 @@ html {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
+
+/* Make sure body structure supports bottom-aligned wave section */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > section {
+  flex: 1;
+}
+
+/* Ensure wave section stretches full width and no weird gaps */
+footer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+/* Ensure SVG waves stretch correctly and sit under content */
+svg {
+  display: block;
+}
+
+/* For dark mode consistency (optional, tweak as needed) */
+.dark footer a:hover {
+  color: #f472b6; /* hover-pink-400 */
+}
+
+/* Center footer text inside wave area */
+footer {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.75rem;
+  width: 100%;
+}
