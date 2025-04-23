@@ -44,4 +44,4 @@ Just open the `index.html` file in your browser or run it with Live Server in VS
 
 ### 📜 License
 
-MIT – feel free to fork, modify, or draw inspiration 💫
+MIT – feel free to draw inspiration 💫
